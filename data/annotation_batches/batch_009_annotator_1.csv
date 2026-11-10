@@ -1,0 +1,685 @@
+﻿pair_id,case_id_a,title_a,preconditions_a,steps_a,expected_result_a,case_id_b,title_b,preconditions_b,steps_b,expected_result_b,annotator_1_decision,annotator_1_rationale
+PAIR-00813,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",22.0,Verify the data retrieved in the response after successful POST request.,,Verify the data retrieved in the response after successful POST request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00814,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00815,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",,
+PAIR-00816,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00817,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",26.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00818,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",27.0,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00819,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",28.0,Verify when the POST API is hit when user does not have access to it.,,Verify when the POST API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00820,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",29.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00821,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",30.0,Verify the JSON Schema of the POST API Response,,Verify the JSON Schema of the POST API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00822,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00823,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-00824,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",,
+PAIR-00825,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",,
+PAIR-00826,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",36.0,"Check for the response status code received for the ""PUT"" request.",,"Check for the response status code received for the ""PUT"" request.","Response Code ""200"" should be received.",,
+PAIR-00827,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",37.0,"Check for the time taken for fetching the reposne of ""PUT"" request.",,"Check for the time taken for fetching the reposne of ""PUT"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00828,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",38.0,Verify the data retrieved in the response after successful PUT request.,,Verify the data retrieved in the response after successful PUT request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00829,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",39.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00830,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",40.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00831,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",41.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00832,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",42.0,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00833,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",43.0,Verify when the PUT API is hit when user does not have access to it.,,Verify when the PUT API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00834,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",44.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00835,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",45.0,Verify the JSON Schema of the PUT API Response,,Verify the JSON Schema of the PUT API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00836,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",46.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00837,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",47.0,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The GET API should return the updated record with 200 OK response and correct data,,
+PAIR-00838,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",49.0,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body",,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body","System shoud send the ""PATCH"" request successfully.",,
+PAIR-00839,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",50.0,"Check for the response status code received for the ""PATCH"" request.",,"Check for the response status code received for the ""PATCH"" request.","Response Code ""200"" should be received.",,
+PAIR-00840,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",51.0,"Check for the time taken for fetching the reposne of ""PATCH"" request.",,"Check for the time taken for fetching the reposne of ""PATCH"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00841,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",52.0,Verify the data retrieved in the response after successful PATCH request.,,Verify the data retrieved in the response after successful PATCH request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00842,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00843,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00844,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00845,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00846,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00847,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00848,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00849,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00850,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-00851,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-00852,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-00853,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00854,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00855,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-00856,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-00857,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00858,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",22.0,Verify the data retrieved in the response after successful POST request.,,Verify the data retrieved in the response after successful POST request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00859,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00860,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",,
+PAIR-00861,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00862,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",26.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00863,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",27.0,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00864,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",28.0,Verify when the POST API is hit when user does not have access to it.,,Verify when the POST API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00865,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",29.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00866,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",30.0,Verify the JSON Schema of the POST API Response,,Verify the JSON Schema of the POST API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00867,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00868,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-00869,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",,
+PAIR-00870,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",,
+PAIR-00871,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",36.0,"Check for the response status code received for the ""PUT"" request.",,"Check for the response status code received for the ""PUT"" request.","Response Code ""200"" should be received.",,
+PAIR-00872,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",37.0,"Check for the time taken for fetching the reposne of ""PUT"" request.",,"Check for the time taken for fetching the reposne of ""PUT"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00873,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",38.0,Verify the data retrieved in the response after successful PUT request.,,Verify the data retrieved in the response after successful PUT request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00874,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",39.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00875,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",40.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00876,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",41.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00877,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",42.0,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00878,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",43.0,Verify when the PUT API is hit when user does not have access to it.,,Verify when the PUT API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00879,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",44.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00880,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",45.0,Verify the JSON Schema of the PUT API Response,,Verify the JSON Schema of the PUT API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00881,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",46.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00882,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",47.0,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The GET API should return the updated record with 200 OK response and correct data,,
+PAIR-00883,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",49.0,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body",,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body","System shoud send the ""PATCH"" request successfully.",,
+PAIR-00884,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",50.0,"Check for the response status code received for the ""PATCH"" request.",,"Check for the response status code received for the ""PATCH"" request.","Response Code ""200"" should be received.",,
+PAIR-00885,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",51.0,"Check for the time taken for fetching the reposne of ""PATCH"" request.",,"Check for the time taken for fetching the reposne of ""PATCH"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00886,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",52.0,Verify the data retrieved in the response after successful PATCH request.,,Verify the data retrieved in the response after successful PATCH request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00887,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00888,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00889,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00890,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00891,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00892,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00893,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00894,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00895,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-00896,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-00897,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-00898,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00899,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00900,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-00901,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-00902,21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",22.0,Verify the data retrieved in the response after successful POST request.,,Verify the data retrieved in the response after successful POST request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00903,21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00904,21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",,
+PAIR-00905,21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00906,21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",26.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00907,21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",27.0,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00908,21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",28.0,Verify when the POST API is hit when user does not have access to it.,,Verify when the POST API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00909,21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",29.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00910,21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",30.0,Verify the JSON Schema of the POST API Response,,Verify the JSON Schema of the POST API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00911,21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00912,21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,

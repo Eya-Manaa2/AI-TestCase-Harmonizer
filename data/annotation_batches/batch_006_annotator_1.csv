@@ -1,0 +1,431 @@
+﻿pair_id,case_id_a,title_a,preconditions_a,steps_a,expected_result_a,case_id_b,title_b,preconditions_b,steps_b,expected_result_b,annotator_1_decision,annotator_1_rationale
+PAIR-00510,11.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00511,11.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00512,11.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-00513,11.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-00514,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00515,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",14.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00516,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",15.0,Verify by hiiting the GET request by applying query param filter,,Verify by hiiting the GET request by applying query param filter,The API should return the respective data as per the query param filter applied,,
+PAIR-00517,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",16.0,Verify by hitting the GET request without entering the mandatory parameters,,Verify by hitting the GET request without entering the mandatory parameters,The GET API should return 400 Bad Request response code,,
+PAIR-00518,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",17.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-00519,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",,
+PAIR-00520,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",,
+PAIR-00521,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00522,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",22.0,Verify the data retrieved in the response after successful POST request.,,Verify the data retrieved in the response after successful POST request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00523,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00524,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",,
+PAIR-00525,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00526,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",26.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00527,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",27.0,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00528,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",28.0,Verify when the POST API is hit when user does not have access to it.,,Verify when the POST API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00529,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",29.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00530,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",30.0,Verify the JSON Schema of the POST API Response,,Verify the JSON Schema of the POST API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00531,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00532,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-00533,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",,
+PAIR-00534,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",,
+PAIR-00535,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",36.0,"Check for the response status code received for the ""PUT"" request.",,"Check for the response status code received for the ""PUT"" request.","Response Code ""200"" should be received.",,
+PAIR-00536,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",37.0,"Check for the time taken for fetching the reposne of ""PUT"" request.",,"Check for the time taken for fetching the reposne of ""PUT"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00537,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",38.0,Verify the data retrieved in the response after successful PUT request.,,Verify the data retrieved in the response after successful PUT request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00538,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",39.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00539,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",40.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00540,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",41.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00541,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",42.0,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00542,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",43.0,Verify when the PUT API is hit when user does not have access to it.,,Verify when the PUT API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00543,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",44.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00544,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",45.0,Verify the JSON Schema of the PUT API Response,,Verify the JSON Schema of the PUT API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00545,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",46.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00546,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",47.0,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The GET API should return the updated record with 200 OK response and correct data,,
+PAIR-00547,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",49.0,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body",,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body","System shoud send the ""PATCH"" request successfully.",,
+PAIR-00548,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",50.0,"Check for the response status code received for the ""PATCH"" request.",,"Check for the response status code received for the ""PATCH"" request.","Response Code ""200"" should be received.",,
+PAIR-00549,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",51.0,"Check for the time taken for fetching the reposne of ""PATCH"" request.",,"Check for the time taken for fetching the reposne of ""PATCH"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00550,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",52.0,Verify the data retrieved in the response after successful PATCH request.,,Verify the data retrieved in the response after successful PATCH request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00551,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00552,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00553,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00554,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00555,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00556,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00557,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00558,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00559,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-00560,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-00561,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-00562,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00563,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00564,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-00565,12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-00566,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,14.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00567,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,15.0,Verify by hiiting the GET request by applying query param filter,,Verify by hiiting the GET request by applying query param filter,The API should return the respective data as per the query param filter applied,,
+PAIR-00568,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,16.0,Verify by hitting the GET request without entering the mandatory parameters,,Verify by hitting the GET request without entering the mandatory parameters,The GET API should return 400 Bad Request response code,,
+PAIR-00569,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,17.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-00570,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",,
+PAIR-00571,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",,
+PAIR-00572,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00573,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,22.0,Verify the data retrieved in the response after successful POST request.,,Verify the data retrieved in the response after successful POST request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00574,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00575,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",,
+PAIR-00576,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00577,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,26.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00578,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,27.0,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00579,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,28.0,Verify when the POST API is hit when user does not have access to it.,,Verify when the POST API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00580,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,29.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00581,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,30.0,Verify the JSON Schema of the POST API Response,,Verify the JSON Schema of the POST API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00582,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00583,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-00584,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",,
+PAIR-00585,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",,
+PAIR-00586,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,36.0,"Check for the response status code received for the ""PUT"" request.",,"Check for the response status code received for the ""PUT"" request.","Response Code ""200"" should be received.",,
+PAIR-00587,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,37.0,"Check for the time taken for fetching the reposne of ""PUT"" request.",,"Check for the time taken for fetching the reposne of ""PUT"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00588,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,38.0,Verify the data retrieved in the response after successful PUT request.,,Verify the data retrieved in the response after successful PUT request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00589,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,39.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00590,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,40.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00591,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,41.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00592,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,42.0,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00593,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,43.0,Verify when the PUT API is hit when user does not have access to it.,,Verify when the PUT API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00594,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,44.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00595,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,45.0,Verify the JSON Schema of the PUT API Response,,Verify the JSON Schema of the PUT API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00596,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,46.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00597,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,47.0,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The GET API should return the updated record with 200 OK response and correct data,,
+PAIR-00598,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,49.0,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body",,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body","System shoud send the ""PATCH"" request successfully.",,
+PAIR-00599,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,50.0,"Check for the response status code received for the ""PATCH"" request.",,"Check for the response status code received for the ""PATCH"" request.","Response Code ""200"" should be received.",,
+PAIR-00600,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,51.0,"Check for the time taken for fetching the reposne of ""PATCH"" request.",,"Check for the time taken for fetching the reposne of ""PATCH"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00601,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,52.0,Verify the data retrieved in the response after successful PATCH request.,,Verify the data retrieved in the response after successful PATCH request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00602,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00603,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00604,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00605,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00606,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00607,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00608,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00609,13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,

@@ -1,0 +1,663 @@
+﻿pair_id,case_id_a,title_a,preconditions_a,steps_a,expected_result_a,case_id_b,title_b,preconditions_b,steps_b,expected_result_b,annotator_2_decision,annotator_2_rationale
+PAIR-01316,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-01317,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01318,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01319,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01320,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01321,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-01322,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01323,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01324,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-01325,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-01326,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01327,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01328,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01329,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01330,31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01331,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",,
+PAIR-01332,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",,
+PAIR-01333,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,36.0,"Check for the response status code received for the ""PUT"" request.",,"Check for the response status code received for the ""PUT"" request.","Response Code ""200"" should be received.",,
+PAIR-01334,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,37.0,"Check for the time taken for fetching the reposne of ""PUT"" request.",,"Check for the time taken for fetching the reposne of ""PUT"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01335,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,38.0,Verify the data retrieved in the response after successful PUT request.,,Verify the data retrieved in the response after successful PUT request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-01336,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,39.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-01337,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,40.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01338,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,41.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01339,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,42.0,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01340,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,43.0,Verify when the PUT API is hit when user does not have access to it.,,Verify when the PUT API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01341,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,44.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-01342,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,45.0,Verify the JSON Schema of the PUT API Response,,Verify the JSON Schema of the PUT API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01343,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,46.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01344,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,47.0,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The GET API should return the updated record with 200 OK response and correct data,,
+PAIR-01345,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,49.0,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body",,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body","System shoud send the ""PATCH"" request successfully.",,
+PAIR-01346,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,50.0,"Check for the response status code received for the ""PATCH"" request.",,"Check for the response status code received for the ""PATCH"" request.","Response Code ""200"" should be received.",,
+PAIR-01347,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,51.0,"Check for the time taken for fetching the reposne of ""PATCH"" request.",,"Check for the time taken for fetching the reposne of ""PATCH"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01348,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,52.0,Verify the data retrieved in the response after successful PATCH request.,,Verify the data retrieved in the response after successful PATCH request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-01349,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-01350,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01351,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01352,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01353,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01354,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-01355,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01356,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01357,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-01358,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-01359,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01360,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01361,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01362,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01363,32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01364,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",,
+PAIR-01365,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",36.0,"Check for the response status code received for the ""PUT"" request.",,"Check for the response status code received for the ""PUT"" request.","Response Code ""200"" should be received.",,
+PAIR-01366,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",37.0,"Check for the time taken for fetching the reposne of ""PUT"" request.",,"Check for the time taken for fetching the reposne of ""PUT"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01367,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",38.0,Verify the data retrieved in the response after successful PUT request.,,Verify the data retrieved in the response after successful PUT request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-01368,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",39.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-01369,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",40.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01370,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",41.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01371,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",42.0,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01372,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",43.0,Verify when the PUT API is hit when user does not have access to it.,,Verify when the PUT API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01374,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",45.0,Verify the JSON Schema of the PUT API Response,,Verify the JSON Schema of the PUT API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01375,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",46.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01376,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",47.0,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The GET API should return the updated record with 200 OK response and correct data,,
+PAIR-01377,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",49.0,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body",,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body","System shoud send the ""PATCH"" request successfully.",,
+PAIR-01378,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",50.0,"Check for the response status code received for the ""PATCH"" request.",,"Check for the response status code received for the ""PATCH"" request.","Response Code ""200"" should be received.",,
+PAIR-01379,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",51.0,"Check for the time taken for fetching the reposne of ""PATCH"" request.",,"Check for the time taken for fetching the reposne of ""PATCH"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01380,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",52.0,Verify the data retrieved in the response after successful PATCH request.,,Verify the data retrieved in the response after successful PATCH request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-01381,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-01382,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01383,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01384,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01385,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01387,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01388,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01389,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-01390,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-01391,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01392,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01393,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01394,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01395,33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01396,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",36.0,"Check for the response status code received for the ""PUT"" request.",,"Check for the response status code received for the ""PUT"" request.","Response Code ""200"" should be received.",,
+PAIR-01397,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",37.0,"Check for the time taken for fetching the reposne of ""PUT"" request.",,"Check for the time taken for fetching the reposne of ""PUT"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01398,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",38.0,Verify the data retrieved in the response after successful PUT request.,,Verify the data retrieved in the response after successful PUT request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-01399,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",39.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-01400,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",40.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01401,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",41.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01402,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",42.0,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01403,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",43.0,Verify when the PUT API is hit when user does not have access to it.,,Verify when the PUT API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01405,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",45.0,Verify the JSON Schema of the PUT API Response,,Verify the JSON Schema of the PUT API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01406,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",46.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01407,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",47.0,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The GET API should return the updated record with 200 OK response and correct data,,
+PAIR-01408,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",49.0,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body",,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body","System shoud send the ""PATCH"" request successfully.",,
+PAIR-01409,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",50.0,"Check for the response status code received for the ""PATCH"" request.",,"Check for the response status code received for the ""PATCH"" request.","Response Code ""200"" should be received.",,
+PAIR-01410,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",51.0,"Check for the time taken for fetching the reposne of ""PATCH"" request.",,"Check for the time taken for fetching the reposne of ""PATCH"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01411,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",52.0,Verify the data retrieved in the response after successful PATCH request.,,Verify the data retrieved in the response after successful PATCH request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-01412,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-01413,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01414,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01415,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01416,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01418,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01419,35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,

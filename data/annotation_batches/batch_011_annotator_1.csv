@@ -1,0 +1,867 @@
+﻿pair_id,case_id_a,title_a,preconditions_a,steps_a,expected_result_a,case_id_b,title_b,preconditions_b,steps_b,expected_result_b,annotator_1_decision,annotator_1_rationale
+PAIR-01013,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",50.0,"Check for the response status code received for the ""PATCH"" request.",,"Check for the response status code received for the ""PATCH"" request.","Response Code ""200"" should be received.",,
+PAIR-01014,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",51.0,"Check for the time taken for fetching the reposne of ""PATCH"" request.",,"Check for the time taken for fetching the reposne of ""PATCH"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01015,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",52.0,Verify the data retrieved in the response after successful PATCH request.,,Verify the data retrieved in the response after successful PATCH request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-01016,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-01017,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01018,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01019,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01020,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01021,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-01022,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01023,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01024,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-01025,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-01026,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01027,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01028,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01029,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01030,23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01031,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01032,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",26.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01033,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",27.0,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01034,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",28.0,Verify when the POST API is hit when user does not have access to it.,,Verify when the POST API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01035,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",29.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-01036,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",30.0,Verify the JSON Schema of the POST API Response,,Verify the JSON Schema of the POST API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01037,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01038,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-01039,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",,
+PAIR-01040,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",,
+PAIR-01041,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",36.0,"Check for the response status code received for the ""PUT"" request.",,"Check for the response status code received for the ""PUT"" request.","Response Code ""200"" should be received.",,
+PAIR-01042,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",37.0,"Check for the time taken for fetching the reposne of ""PUT"" request.",,"Check for the time taken for fetching the reposne of ""PUT"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01043,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",38.0,Verify the data retrieved in the response after successful PUT request.,,Verify the data retrieved in the response after successful PUT request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-01044,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",39.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-01045,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",40.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01046,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",41.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01047,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",42.0,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01048,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",43.0,Verify when the PUT API is hit when user does not have access to it.,,Verify when the PUT API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01049,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",44.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-01050,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",45.0,Verify the JSON Schema of the PUT API Response,,Verify the JSON Schema of the PUT API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01051,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",46.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01052,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",47.0,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The GET API should return the updated record with 200 OK response and correct data,,
+PAIR-01053,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",49.0,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body",,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body","System shoud send the ""PATCH"" request successfully.",,
+PAIR-01054,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",50.0,"Check for the response status code received for the ""PATCH"" request.",,"Check for the response status code received for the ""PATCH"" request.","Response Code ""200"" should be received.",,
+PAIR-01055,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",51.0,"Check for the time taken for fetching the reposne of ""PATCH"" request.",,"Check for the time taken for fetching the reposne of ""PATCH"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01056,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",52.0,Verify the data retrieved in the response after successful PATCH request.,,Verify the data retrieved in the response after successful PATCH request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-01057,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-01058,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01059,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01060,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01061,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01062,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-01063,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01064,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01065,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-01066,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-01067,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01068,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01069,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01070,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01071,24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01072,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",26.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01073,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",27.0,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01074,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",28.0,Verify when the POST API is hit when user does not have access to it.,,Verify when the POST API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01075,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",29.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-01076,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",30.0,Verify the JSON Schema of the POST API Response,,Verify the JSON Schema of the POST API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01077,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01078,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-01079,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",,
+PAIR-01080,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",,
+PAIR-01081,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",36.0,"Check for the response status code received for the ""PUT"" request.",,"Check for the response status code received for the ""PUT"" request.","Response Code ""200"" should be received.",,
+PAIR-01082,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",37.0,"Check for the time taken for fetching the reposne of ""PUT"" request.",,"Check for the time taken for fetching the reposne of ""PUT"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01083,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",38.0,Verify the data retrieved in the response after successful PUT request.,,Verify the data retrieved in the response after successful PUT request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-01084,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",39.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-01085,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",40.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01086,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",41.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01087,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",42.0,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01088,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",43.0,Verify when the PUT API is hit when user does not have access to it.,,Verify when the PUT API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01089,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",44.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-01090,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",45.0,Verify the JSON Schema of the PUT API Response,,Verify the JSON Schema of the PUT API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01091,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",46.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01092,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",47.0,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The GET API should return the updated record with 200 OK response and correct data,,
+PAIR-01093,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",49.0,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body",,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body","System shoud send the ""PATCH"" request successfully.",,
+PAIR-01094,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",50.0,"Check for the response status code received for the ""PATCH"" request.",,"Check for the response status code received for the ""PATCH"" request.","Response Code ""200"" should be received.",,
+PAIR-01095,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",51.0,"Check for the time taken for fetching the reposne of ""PATCH"" request.",,"Check for the time taken for fetching the reposne of ""PATCH"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01096,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",52.0,Verify the data retrieved in the response after successful PATCH request.,,Verify the data retrieved in the response after successful PATCH request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-01097,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-01098,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01099,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-01100,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-01101,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01102,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-01103,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01104,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01105,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-01106,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-01107,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01108,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01109,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01110,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01111,25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01112,26.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",27.0,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,

@@ -1,0 +1,19 @@
+id,title,preconditions,steps,expected_result,equivalence_group
+TC-001,Login with valid credentials,User account exists,"Open the login page; enter username; enter password; click Login",Dashboard is displayed,login_success
+TC-002,Authenticate with correct details,User account exists,"Navigate to authentication screen; type username and password; press the login button",Dashboard is displayed,login_success
+TC-003,Sign in successfully,User account exists,"Go to login page; input username; input password; select Sign in",User lands on dashboard,login_success
+TC-004,Login with invalid password,User account exists,"Open login page; enter username; enter invalid password; click Login",An error message is displayed,login_failure
+TC-005,Reject incorrect credentials,User account exists,"Navigate to login page; type wrong password; click login button",Authentication error is displayed,login_failure
+TC-006,Password reset request,User is on login page,"Click Forgot password; enter registered email; click Send",Password reset confirmation is displayed,password_reset
+TC-007,Request a password recovery link,User is on the sign-in page,"Select Forgot password; type email address; press Send",Recovery email confirmation appears,password_reset
+TC-008,Add item to shopping cart,Product is available,"Open product page; click Add to cart",Cart contains the selected product,cart_add
+TC-009,Put a product in the basket,Product is available,"Navigate to product page; press Add to basket",Selected product is shown in cart,cart_add
+TC-010,Remove item from cart,Cart contains a product,"Open cart; click Remove",Cart no longer contains the product,cart_remove
+TC-011,Delete a basket item,Shopping basket contains an item,"Go to basket; select Remove item",Basket is empty,cart_remove
+TC-012,Search for a product,Product catalog is available,"Enter headphones in search field; click Search",Matching products are displayed,search
+TC-013,Find products by keyword,Product catalog is available,"Type headphones into the search box; press Search",Search results contain matching products,search
+TC-014,Update account email,User is signed in,"Open profile; enter new email; click Save",Updated email is displayed,profile_update
+TC-015,Change the profile email address,User is signed in,"Navigate to profile settings; type a new email address; press Save",Profile shows the new email,profile_update
+TC-016,View order history,User is signed in,"Open account; click Order history",Previous orders are displayed,order_history
+TC-017,Display past purchases,User is signed in,"Go to account page; select Orders",A list of previous orders is shown,order_history
+TC-018,Export a report,User has report access,"Open reports; click Export",A report file is downloaded,unique

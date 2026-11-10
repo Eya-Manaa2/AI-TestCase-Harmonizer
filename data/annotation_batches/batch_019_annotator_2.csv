@@ -1,0 +1,408 @@
+﻿pair_id,case_id_a,title_a,preconditions_a,steps_a,expected_result_a,case_id_b,title_b,preconditions_b,steps_b,expected_result_b,annotator_2_decision,annotator_2_rationale
+PAIR-01821,55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01822,55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01823,55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01824,55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01825,55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01826,56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-01827,56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-01828,56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01829,56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01830,56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-01831,56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-01832,56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01833,56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01834,56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01835,56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01836,56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01837,57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-01838,57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01839,57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01840,57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-01841,57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-01842,57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01843,57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01844,57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01845,57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01846,57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01847,58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-01848,58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01849,58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-01850,58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-01851,58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01852,58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01853,58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01854,58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01855,58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01856,59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-01857,59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-01858,59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-01859,59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01860,59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01861,59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01862,59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01863,59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01864,60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-01865,60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-01866,60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01867,60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01868,60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01869,60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01870,60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01871,61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-01872,61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01873,61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01874,61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01875,61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01876,61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01877,63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-01878,63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01879,63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01880,63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01881,63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01882,64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-01883,64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01884,64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01885,64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01886,65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-01887,65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01888,65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01889,66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-01890,66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-01891,67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,

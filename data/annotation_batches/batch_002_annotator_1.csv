@@ -1,0 +1,565 @@
+﻿pair_id,case_id_a,title_a,preconditions_a,steps_a,expected_result_a,case_id_b,title_b,preconditions_b,steps_b,expected_result_b,annotator_1_decision,annotator_1_rationale
+PAIR-00101,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",46.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00102,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",47.0,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The GET API should return the updated record with 200 OK response and correct data,,
+PAIR-00103,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",49.0,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body",,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body","System shoud send the ""PATCH"" request successfully.",,
+PAIR-00104,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",50.0,"Check for the response status code received for the ""PATCH"" request.",,"Check for the response status code received for the ""PATCH"" request.","Response Code ""200"" should be received.",,
+PAIR-00105,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",51.0,"Check for the time taken for fetching the reposne of ""PATCH"" request.",,"Check for the time taken for fetching the reposne of ""PATCH"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00106,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",52.0,Verify the data retrieved in the response after successful PATCH request.,,Verify the data retrieved in the response after successful PATCH request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00107,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00108,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00109,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00110,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00111,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00112,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00113,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00114,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00115,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-00116,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-00117,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-00118,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00119,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00120,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-00121,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-00122,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00123,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",7.0,"Check for the time taken for fetching the response of ""GET"" request.",,"Check for the time taken for fetching the response of ""GET"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00124,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",8.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00125,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",9.0,"Verify if the GET API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the GET API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00126,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",10.0,Verify when the GET API is hit when user does not have access to it.,,Verify when the GET API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00127,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",11.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00128,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",,
+PAIR-00129,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00130,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",14.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00131,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",15.0,Verify by hiiting the GET request by applying query param filter,,Verify by hiiting the GET request by applying query param filter,The API should return the respective data as per the query param filter applied,,
+PAIR-00132,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",16.0,Verify by hitting the GET request without entering the mandatory parameters,,Verify by hitting the GET request without entering the mandatory parameters,The GET API should return 400 Bad Request response code,,
+PAIR-00133,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",17.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-00134,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",,
+PAIR-00135,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",,
+PAIR-00136,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00137,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",22.0,Verify the data retrieved in the response after successful POST request.,,Verify the data retrieved in the response after successful POST request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00138,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00139,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",,
+PAIR-00140,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00141,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",26.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00142,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",27.0,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00143,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",28.0,Verify when the POST API is hit when user does not have access to it.,,Verify when the POST API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00144,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",29.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00145,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",30.0,Verify the JSON Schema of the POST API Response,,Verify the JSON Schema of the POST API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00146,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00147,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-00148,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",,
+PAIR-00149,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",,
+PAIR-00150,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",36.0,"Check for the response status code received for the ""PUT"" request.",,"Check for the response status code received for the ""PUT"" request.","Response Code ""200"" should be received.",,
+PAIR-00151,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",37.0,"Check for the time taken for fetching the reposne of ""PUT"" request.",,"Check for the time taken for fetching the reposne of ""PUT"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00152,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",38.0,Verify the data retrieved in the response after successful PUT request.,,Verify the data retrieved in the response after successful PUT request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00153,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",39.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00154,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",40.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00155,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",41.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00156,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",42.0,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00157,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",43.0,Verify when the PUT API is hit when user does not have access to it.,,Verify when the PUT API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00158,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",44.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00159,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",45.0,Verify the JSON Schema of the PUT API Response,,Verify the JSON Schema of the PUT API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00160,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",46.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00161,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",47.0,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The GET API should return the updated record with 200 OK response and correct data,,
+PAIR-00162,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",49.0,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body",,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body","System shoud send the ""PATCH"" request successfully.",,
+PAIR-00163,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",50.0,"Check for the response status code received for the ""PATCH"" request.",,"Check for the response status code received for the ""PATCH"" request.","Response Code ""200"" should be received.",,
+PAIR-00164,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",51.0,"Check for the time taken for fetching the reposne of ""PATCH"" request.",,"Check for the time taken for fetching the reposne of ""PATCH"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00165,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",52.0,Verify the data retrieved in the response after successful PATCH request.,,Verify the data retrieved in the response after successful PATCH request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00166,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00167,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00168,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00169,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00170,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00171,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00172,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00173,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00174,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-00175,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-00176,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-00177,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00178,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00179,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-00180,5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-00181,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",7.0,"Check for the time taken for fetching the response of ""GET"" request.",,"Check for the time taken for fetching the response of ""GET"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00182,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",8.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00183,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",9.0,"Verify if the GET API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the GET API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00184,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",10.0,Verify when the GET API is hit when user does not have access to it.,,Verify when the GET API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00185,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",11.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00186,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",,
+PAIR-00187,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00188,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",14.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00189,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",15.0,Verify by hiiting the GET request by applying query param filter,,Verify by hiiting the GET request by applying query param filter,The API should return the respective data as per the query param filter applied,,
+PAIR-00190,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",16.0,Verify by hitting the GET request without entering the mandatory parameters,,Verify by hitting the GET request without entering the mandatory parameters,The GET API should return 400 Bad Request response code,,
+PAIR-00191,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",17.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-00192,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",,
+PAIR-00193,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",,
+PAIR-00194,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00195,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",22.0,Verify the data retrieved in the response after successful POST request.,,Verify the data retrieved in the response after successful POST request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00196,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00197,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",,
+PAIR-00198,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00199,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",26.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00200,6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",27.0,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,

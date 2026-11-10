@@ -1,0 +1,747 @@
+﻿pair_id,case_id_a,title_a,preconditions_a,steps_a,expected_result_a,case_id_b,title_b,preconditions_b,steps_b,expected_result_b,annotator_1_decision,annotator_1_rationale
+PAIR-00001,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",,
+PAIR-00002,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",,
+PAIR-00003,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00004,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",7.0,"Check for the time taken for fetching the response of ""GET"" request.",,"Check for the time taken for fetching the response of ""GET"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00005,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",8.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00006,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",9.0,"Verify if the GET API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the GET API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00007,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",10.0,Verify when the GET API is hit when user does not have access to it.,,Verify when the GET API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00008,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",11.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00009,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",,
+PAIR-00010,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00011,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",14.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00012,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",15.0,Verify by hiiting the GET request by applying query param filter,,Verify by hiiting the GET request by applying query param filter,The API should return the respective data as per the query param filter applied,,
+PAIR-00013,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",16.0,Verify by hitting the GET request without entering the mandatory parameters,,Verify by hitting the GET request without entering the mandatory parameters,The GET API should return 400 Bad Request response code,,
+PAIR-00014,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",17.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-00015,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",,
+PAIR-00016,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",,
+PAIR-00017,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00018,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",22.0,Verify the data retrieved in the response after successful POST request.,,Verify the data retrieved in the response after successful POST request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00019,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00020,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",,
+PAIR-00021,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00022,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",26.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00023,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",27.0,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00024,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",28.0,Verify when the POST API is hit when user does not have access to it.,,Verify when the POST API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00025,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",29.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00026,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",30.0,Verify the JSON Schema of the POST API Response,,Verify the JSON Schema of the POST API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00027,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00028,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-00029,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",,
+PAIR-00030,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",,
+PAIR-00031,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",36.0,"Check for the response status code received for the ""PUT"" request.",,"Check for the response status code received for the ""PUT"" request.","Response Code ""200"" should be received.",,
+PAIR-00032,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",37.0,"Check for the time taken for fetching the reposne of ""PUT"" request.",,"Check for the time taken for fetching the reposne of ""PUT"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00033,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",38.0,Verify the data retrieved in the response after successful PUT request.,,Verify the data retrieved in the response after successful PUT request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00034,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",39.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00035,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",40.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00036,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",41.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00037,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",42.0,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00038,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",43.0,Verify when the PUT API is hit when user does not have access to it.,,Verify when the PUT API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00039,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",44.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00040,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",45.0,Verify the JSON Schema of the PUT API Response,,Verify the JSON Schema of the PUT API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00041,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",46.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00042,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",47.0,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PUT API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The GET API should return the updated record with 200 OK response and correct data,,
+PAIR-00043,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",49.0,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body",,"Verify by sending ""PATCH"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Partial Request Body","System shoud send the ""PATCH"" request successfully.",,
+PAIR-00044,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",50.0,"Check for the response status code received for the ""PATCH"" request.",,"Check for the response status code received for the ""PATCH"" request.","Response Code ""200"" should be received.",,
+PAIR-00045,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",51.0,"Check for the time taken for fetching the reposne of ""PATCH"" request.",,"Check for the time taken for fetching the reposne of ""PATCH"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00046,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",52.0,Verify the data retrieved in the response after successful PATCH request.,,Verify the data retrieved in the response after successful PATCH request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00047,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",53.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00048,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",54.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00049,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",55.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00050,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",56.0,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PATCH API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00051,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",57.0,Verify when the PATCH API is hit when user does not have access to it.,,Verify when the PATCH API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00052,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",58.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00053,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",59.0,Verify the JSON Schema of the PATCH API Response,,Verify the JSON Schema of the PATCH API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00054,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",60.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00055,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",61.0,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",,"Hit the PATCH API to update a record in the system.
+Hit the GET API with query param to check for the updated record in the system",The PATCH API should return the updated record with 200 OK response and correct data,,
+PAIR-00056,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",63.0,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted",,"Verify by sending ""DELETE"" request after filling necessary details for the following:
+01. Authorization
+02. Parameter(like id, number, etc) to deleted","System shoud send the ""DELETE"" request successfully.",,
+PAIR-00057,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",64.0,Check for the response status code recieved for the DELETE request.,,Check for the response status code recieved for the DELETE request.,Response Code 204 or 200(based on the implementation) should be retrieved,,
+PAIR-00058,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",65.0,"Check for the time taken for fetching the response of ""DELETE"" request.",,"Check for the time taken for fetching the response of ""DELETE"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00059,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",66.0,"Check by passing following values in Request:
+01. Invalid value passed in header.",,"Check by passing following values in Request:
+01. Invalid value passed in header.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00060,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",67.0,Verify by hitting the GET API after deleting a record using DELETE API,,Verify by hitting the GET API after deleting a record using DELETE API,"The GET API should return the Status Code 404 Not Found.
+No records should be retrieved in the response.",,
+PAIR-00061,3.0,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params",,"Verify by sending ""GET"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Filter Params","System shoud send the ""GET"" request successfully.",68.0,Verify by hitting the DELETE API again using the same record details which are deleted.,,Verify by hitting the DELETE API again using the same record details which are deleted.,"Depending upon the implementation, it should either return 204 or 404.",,
+PAIR-00062,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",5.0,Verify the Response details,,Verify the Response details,"1. Response schema should be as per the Swagger/Functional document
+2. All the fields and values in the response should appear as per the mapping details in the Functional requirement document.",,
+PAIR-00063,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",6.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00064,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",7.0,"Check for the time taken for fetching the response of ""GET"" request.",,"Check for the time taken for fetching the response of ""GET"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00065,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",8.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00066,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",9.0,"Verify if the GET API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the GET API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00067,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",10.0,Verify when the GET API is hit when user does not have access to it.,,Verify when the GET API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00068,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",11.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00069,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",12.0,Verify the reponse status code when No records are available in the response for the request,,Verify the reponse status code when No records are available in the response for the request,"Response status code should be 404. 
+<Depending on the implementation a message may be retrieved like ""No Records Found"">",,
+PAIR-00070,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",13.0,Verify the Json Schema of the GET API Response,,Verify the Json Schema of the GET API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00071,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",14.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00072,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",15.0,Verify by hiiting the GET request by applying query param filter,,Verify by hiiting the GET request by applying query param filter,The API should return the respective data as per the query param filter applied,,
+PAIR-00073,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",16.0,Verify by hitting the GET request without entering the mandatory parameters,,Verify by hitting the GET request without entering the mandatory parameters,The GET API should return 400 Bad Request response code,,
+PAIR-00074,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",17.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-00075,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",19.0,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""POST"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System should send the ""POST"" request successfully.",,
+PAIR-00076,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",20.0,"Check for the response status code received for the ""POST"" request.",,"Check for the response status code received for the ""POST"" request.","Response Code ""200""/""201"" should be received.",,
+PAIR-00077,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",21.0,"Check for the time taken for fetching the response of ""POST"" request.",,"Check for the time taken for fetching the response of ""POST"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00078,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",22.0,Verify the data retrieved in the response after successful POST request.,,Verify the data retrieved in the response after successful POST request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00079,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",23.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00080,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",24.0,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.",,"In case of a POST API to create Valid TOKENS:
+Check for the Auth Token received in response.","System should generate fresh token in response.
+Token value should not be null.",,
+PAIR-00081,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",25.0,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request body:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00082,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",26.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00083,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",27.0,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the POST API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00084,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",28.0,Verify when the POST API is hit when user does not have access to it.,,Verify when the POST API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00085,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",29.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00086,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",30.0,Verify the JSON Schema of the POST API Response,,Verify the JSON Schema of the POST API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
+PAIR-00087,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",31.0,Verify the response headers,,Verify the response headers,"Response headers should be correct. 
+Check Content-Type, etc.
+<Better to ask Devs for technicalities in case any specific header need to ne verified)",,
+PAIR-00088,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",32.0,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",,"Hit the POST API to create a new record in the system.
+Hit the GET API with query param to check for the newly created record in the system",The GET API should return the newly created record with 200 OK response and correct data,,
+PAIR-00089,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",33.0,Verify by hitting the POST request with duplicate records,,Verify by hitting the POST request with duplicate records,"Based on the implementation, the system might allow/not allow creating duplicate records.
+Clarify this with the business team.",,
+PAIR-00090,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",35.0,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body",,"Verify by sending ""PUT"" request after filling necessary details for the following:
+01. Authorization
+02. HTTP Headers
+03. Request Body","System shoud send the ""PUT"" request successfully.",,
+PAIR-00091,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",36.0,"Check for the response status code received for the ""PUT"" request.",,"Check for the response status code received for the ""PUT"" request.","Response Code ""200"" should be received.",,
+PAIR-00092,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",37.0,"Check for the time taken for fetching the reposne of ""PUT"" request.",,"Check for the time taken for fetching the reposne of ""PUT"" request.","System should receive the response in minimal time.
+<Approximately response should be received within 1 seconds>
+<Ideally the response should be retrieved within milliseconds>",,
+PAIR-00093,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",38.0,Verify the data retrieved in the response after successful PUT request.,,Verify the data retrieved in the response after successful PUT request.,"Correct data should be retrieved in the response.
+Mapping of the fields and the values should be as per the business requirement document",,
+PAIR-00094,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",39.0,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>",,"Verify the data retrieved in the Response for the following field:
+
+<Field Name>","The <field> should have the following value:
+ 
+<Mention the Data you want to verify with their respective values>",,
+PAIR-00095,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",40.0,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.",,"Check by passing following values in Request:
+01. Mandatory field left blank
+02. Invalid Values passed.","System should not fetch response successfully.
+01. Response Code should be not in range of 2xx.
+02. Error should be received in response.",,
+PAIR-00096,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",41.0,Check by passing Invalid parameters in Request.,,Check by passing Invalid parameters in Request.,"System should not fetch response successfully.
+01. Response status code should be 400 Bad request
+02. Error should be received in response.",,
+PAIR-00097,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",42.0,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token",,"Verify if the PUT API is hit without proper authentication
+
+Either of the following is incorrect:
+1. Username
+2. Password
+3. Client Id
+4. Token","Response status code should be 401.
+No data should be retrieved in the response",,
+PAIR-00098,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",43.0,Verify when the PUT API is hit when user does not have access to it.,,Verify when the PUT API is hit when user does not have access to it.,"Response status code should be 403.
+No data should be retrieved in the response.",,
+PAIR-00099,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",44.0,Verify when the API service is down and user tries to hit the API,,Verify when the API service is down and user tries to hit the API,Response status code should be 503 as service is down and Backend is temporarily unavailable.,,
+PAIR-00100,4.0,"Check for the response status code received for the ""GET"" request.",,"Check for the response status code received for the ""GET"" request.","Response status code should be ""200""",45.0,Verify the JSON Schema of the PUT API Response,,Verify the JSON Schema of the PUT API Response,JSON Schema should match with the details provided in the Swagger/Functional Documents,,
